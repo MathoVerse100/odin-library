@@ -1,13 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library App</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library App</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
+
+  <div class="header">
+    <div class="navigation logo">
+      <img src="./images/sidebar.png">
+    </div>
+    <div class="logo main">
+      <img src="./images/site-logo.png">
+      <p>PowerUp</p>
+    </div>
+    <div class="title"><span>.....</span>The Odin Library</div>
+    <div class="logo profile">
+      <p>MathoVerse100</p>
+      <img src="./images/profile-picture.jpg">
+    </div>
+    <div class="navigation logo">
+      <img src="./images/profile-picture.jpg">
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="bar">
+      <div class="icon">
+        <img src="./images/add.png">
+      </div>
+      <div class="name">Add Book</div>
+    </div>
+    <div class="bar">
+      <div class="icon">
+        <img src="./images/remove.png">
+      </div>
+      <div class="name">Remove Book</div>
+    </div>
+    <div class="bar">
+      <div class="icon">
+        <img src="./images/notes.png">
+      </div>
+      <div class="name">Notes</div>
+    </div>
+    <div class="bar">
+      <div class="icon">
+        <img src="./images/settings.png">
+      </div>
+      <div class="name">Settings</div>
+    </div>
+  </div>
+
+  <div class="library">
+    <div class="shelf">Completed</div>
+    <div class="shelf">Ongoing</div>
+    <div class="shelf"></div>
+    <div class="shelf"></div>
+  </div>
+
+  <dialog class="modal">
+    <h1>Add a Book</h1>
     
+    <div class="separator"></div>
+
+    <form class="form" action="#" method="dialog">
+      <label for="title">Title</label><br>
+      <input required type="text" id="title" maxlength="20" name="title">
+      <br><br>
+
+      <label for="author">Author</label><br>
+      <input required type="text" id="author" maxlength="20" name="author">
+      <br><br>
+
+      <label for="number-of-pages">Number of Pages</label><br>
+      <input required type="number" id="number-of-pages" maxlength="20" name="number-of-pages">
+      <br><br>
+
+      <div class="checkbox">
+        <label for="status">Completed?</label>
+        <input type="checkbox" id="status" maxlength="20" name="status">
+      </div>
+      <br>
+
+      <div class="button">
+        <button type="submit">Add Book</button>
+      </div>
+    </form>
+  </dialog>
 </body>
 </html>
